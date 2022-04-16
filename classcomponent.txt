@@ -1,0 +1,31 @@
+import React, { Component } from 'react'
+
+export class UpdateState extends Component {
+
+  constructor() 
+  {
+    super()
+    this.state = {
+      count : 0
+    }
+  }
+
+  render() {
+
+    this.Update = () => {
+      this.setState({count : this.state.count+1})
+    }
+    return (
+      <>
+        <h1> Hello World </h1>
+        <h2>My State : {this.state.count} </h2>
+        <button onClick={this.Update}> Update State </button>
+      </>
+    )
+  }
+}
+
+export default UpdateState
+
+
+    
